@@ -13,7 +13,7 @@ export default function Balance({ transactions }) {
     <View style={styles.container}>
       <Text style={heading.h4}>Your Balance:</Text>
       <Text style={styles.balance}>
-        ${numberWithCommas(balance.toFixed(2))}
+        {numberWithCommas(balance.toFixed(2))}
       </Text>
     </View>
   );

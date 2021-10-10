@@ -32,7 +32,7 @@ export default function TransactionList({ item, deleteTransaction }) {
         </View>
         <Text style={styles.color}>
           {" "}
-          {sign}${numberWithCommas(Math.abs(+item.amount).toFixed(2))}
+          {sign}{numberWithCommas(Math.abs(+item.amount).toFixed(2))}
         </Text>
       </View>
     </TouchableOpacity>
