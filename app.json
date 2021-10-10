@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "ExpenseTracker",
+    "slug": "ExpenseTracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "description": "A project allows you to track your income and expense.",
+    "githubUrl": "https://github.com/jaydip-growexxer/25-expenseTracker-reactNative"
+  }
+}
