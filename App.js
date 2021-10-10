@@ -60,11 +60,11 @@ export default function App() {
           <View style={styles.bodyWrapper}>
             <Balance transactions={transactions} />
             <IncomeExpenses transactions={transactions} />
+            <AddTransaction addTransaction={addTransaction} />
             <TransactionList
               transactions={transactions}
               deleteTransaction={deleteTransaction}
             />
-            <AddTransaction addTransaction={addTransaction} />
           </View>
         </ScrollView>
       </KeyboardAvoidingView>
