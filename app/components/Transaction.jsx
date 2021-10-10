@@ -18,6 +18,9 @@ export default function TransactionList({ item, deleteTransaction }) {
             size={20}
             color="firebrick"
             onPress={() =>
+              (Platform.OS != "ios" || Platform.OS != "android") ?
+              confirm("Are you sure you want to delete this transaction?") == true ? deleteTransaction(item.id) : false
+              :
               Alert.alert(
                 "Delete Transaction",
                 "Are you sure you want to delete this transaction?",
