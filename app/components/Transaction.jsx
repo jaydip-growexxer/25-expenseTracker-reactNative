@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Alert } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity, Alert, Platform } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 import { numberWithCommas } from "../utils/format";
@@ -18,7 +18,7 @@ export default function TransactionList({ item, deleteTransaction }) {
             size={20}
             color="firebrick"
             onPress={() =>
-              (Platform.OS != "ios" || Platform.OS != "android") ?
+              Platform.OS == "web" ?
               confirm("Are you sure you want to delete this transaction?") == true ? deleteTransaction(item.id) : false
               :
               Alert.alert(

@@ -19,9 +19,9 @@ import AddTransaction from "./app/components/AddTransaction";
 export default function App() {
   const [transactions, setTransactions] = useState([
     {
-      id: 1,
-      amount: "1400",
-      name: "Deposit",
+      id: 3,
+      amount: "-500",
+      name: "Camera",
     },
     {
       id: 2,
@@ -29,9 +29,9 @@ export default function App() {
       name: "Dinner",
     },
     {
-      id: 3,
-      amount: "-500",
-      name: "Camera",
+      id: 1,
+      amount: "1400",
+      name: "Deposit",
     },
   ]);
 
